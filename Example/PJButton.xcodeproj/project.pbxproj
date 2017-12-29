@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1538B491AF36C201ED99AD92 /* PJButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PJButton.podspec; path = ../PJButton.podspec; sourceTree = "<group>"; };
-		5374C90A5A88397DB464CEC6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1538B491AF36C201ED99AD92 /* PJButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PJButton.podspec; path = ../PJButton.podspec; sourceTree = "<group>"; };
+		5374C90A5A88397DB464CEC6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		59B712B3011562A5D1CEB382 /* Pods-PJButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PJButton_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PJButton_Example/Pods-PJButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5C5C8E3B3E2143C11211E7D9 /* Pods-PJButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PJButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PJButton_Example/Pods-PJButton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* PJButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PJButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +59,7 @@
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
-		6030B4C9BD68E9EE14CCEDCE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6030B4C9BD68E9EE14CCEDCE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		797EB4EFBE4305F4E0886982 /* Pods_PJButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PJButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Pratik Jamariya";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = GSDMP88D4M;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -335,10 +338,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PJButton_Example/Pods-PJButton_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PJButton/PJButton.framework",
+				"${BUILT_PRODUCTS_DIR}/UIView+TouchHighlighting/UIView_TouchHighlighting.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PJButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIView_TouchHighlighting.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -533,6 +538,7 @@
 			baseConfigurationReference = 59B712B3011562A5D1CEB382 /* Pods-PJButton_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GSDMP88D4M;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PJButton/PJButton-Prefix.pch";
 				INFOPLIST_FILE = "PJButton/PJButton-Info.plist";
@@ -548,6 +554,7 @@
 			baseConfigurationReference = 5C5C8E3B3E2143C11211E7D9 /* Pods-PJButton_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GSDMP88D4M;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PJButton/PJButton-Prefix.pch";
 				INFOPLIST_FILE = "PJButton/PJButton-Info.plist";
