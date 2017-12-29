@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PJButton_Example' do
+  pod 'PJButton', :path => '../'
+
+  target 'PJButton_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
